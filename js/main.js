@@ -9,7 +9,7 @@ function calcAmount() {
     } else if ( amountNumber < 1 ) {
         alert("Minimum 1 terméket kell vásárolnia!");
     } else {
-        let amount = parseInt(amountInput.value) * price;
+        let amount = amountNumber * price;
         showAmount.innerHTML = amount;
     }
 }
