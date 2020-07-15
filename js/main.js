@@ -1,5 +1,6 @@
 function calcAmount() {
     let price = 1000;
+    let freight = 500;
     let amountInput = document.querySelector("input[name='amount-input']");
     let showAmount = document.querySelector("span.show-amount");
     let amountNumber = parseInt(amountInput.value);
