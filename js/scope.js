@@ -2,7 +2,7 @@
 var globalName = "Joe";
 
 function something() {
-    var globalName = "Jack";
+    globalName = "Piri";
     console.log(globalName);
 }
 
