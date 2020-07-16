@@ -5,9 +5,9 @@ function calcAmount() {
     let amountNumber = parseInt(amountInput.value);
     amountNumber = isNaN(amountNumber) ? 0 : amountNumber;
 
-    showSumPrice(price, amountNumber, deliveryPrice);
+    showSumPrice(price, amountNumber);
 }
-function showSumPrice(price, amountNumber, deliveryPrice) {
+function showSumPrice(price, amountNumber) {
     let showAmount = document.querySelector("span.show-amount");
     if (amountNumber > 10) {
         alert("Maximum 10 terméket vásárolhat!");
@@ -15,13 +15,7 @@ function showSumPrice(price, amountNumber, deliveryPrice) {
         alert("Minimum 1 terméket kell vásárolnia!");
     } else {
         let amount = amountNumber * price;
-        if (amount < 5000) {
-            amount = amount + deliveryPrice;
-            showAmount.innerHTML = amount;
-        }
-        else {
-            showAmount.innerHTML = amount;
-        }
+        showAmount.innerHTML = amount;
     }
 
 }
