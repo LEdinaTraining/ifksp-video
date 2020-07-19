@@ -5,7 +5,6 @@ function calcAmount() {
     let amountNumber = parseInt(amountInput.value);
     amountNumber = isNaN(amountNumber) ? 0 : amountNumber;
     let amount = amountNumber * price;
-    let showAmount = document.querySelector("span.show-amount");
     
     validItems(amountNumber);
     showSumAmount(deliveryPrice, amountNumber, amount)
@@ -22,6 +21,7 @@ function validItems(amountNumber) {
 }
 
 function showSumAmount(deliveryPrice, amountNumber, amount) {
+    let showAmount = document.querySelector("span.show-amount");
     if (amount >= 5000) {
         showAmount.innerHTML = amount;
     }
