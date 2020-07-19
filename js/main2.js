@@ -1,9 +1,9 @@
 function calcAmount() {
-    let price = 1000;
-    let deliveryPrice = 500;
     let amountInput = document.querySelector("input[name='amount-input']");
     let amountNumber = parseInt(amountInput.value);
     amountNumber = isNaN(amountNumber) ? 0 : amountNumber;
+    let price = 1000;
+    let deliveryPrice = 500;
     let amount = amountNumber * price;
     
     validItems(amountNumber);
