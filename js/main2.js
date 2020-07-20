@@ -14,7 +14,7 @@ function showSumAmount(deliveryPrice, amountNumber, amount) {
     if (amount >= 5000) {
         showAmount.innerHTML = amount;
     }
-    else if (amount < 5000) {
+    else {
         amount = amount + deliveryPrice;
         showAmount.innerHTML = amount;
     }
