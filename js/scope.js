@@ -1,11 +1,10 @@
-//Global scope
-var globalName = "Joe";
+//global scope
+let name = "Sanyi";
+name = "Varga Béla";
 
-function something() {
-    globalName = "Piri";
-    console.log(globalName);
+{
+    name = "Pisti";
+    console.log(name);
 }
 
-something();
-
-console.log(globalName);
+console.log(name);
