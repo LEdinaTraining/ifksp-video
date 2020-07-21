@@ -1,10 +1,10 @@
 //global scope
-let name = "Sanyi";
-name = "Varga Béla";
+const NAME = "Sanyi";
 
-{
-    name = "Pisti";
-    console.log(name);
+function test() {
+    const NAME = "Pisti";
+    console.log(NAME);
 }
+test();
 
-console.log(name);
+console.log(NAME);
