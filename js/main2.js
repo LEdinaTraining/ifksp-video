@@ -31,3 +31,7 @@ function calcAmount() {
     validItems(amountNumber);
     showSumAmount(deliveryPrice, amountNumber, amount);
 }
+function compute(x, y, z) { return x * y + z; }
+compute(0, 10, 1);
+
+console.log(compute);
