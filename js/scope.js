@@ -5,6 +5,7 @@ function test() {
     const NAME = "Pisti";
     console.log(NAME);
 }
+
 test();
 
 console.log(NAME);
